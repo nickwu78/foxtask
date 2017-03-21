@@ -1,24 +1,5 @@
-# README
+# foxTASK
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+foxTask is a Ruby on Rails app built during my Coder Factory Academy course.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It aims to replicate functionality of freelance job platforms like odesk, freelancer, airtasker etc.
