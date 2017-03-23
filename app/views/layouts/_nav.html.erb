@@ -1,0 +1,16 @@
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo">Fox Task</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#" class="waves-effect waves-light btn">Browse all jobs</a></li>
+      <li><%= link_to "Post A Gig &raquo".html_safe, new_gig_path, class: "waves-effect waves-light btn"%></li>
+      <% if user_signed_in? %>
+        <li><%= link_to "Profile", edit_user_registration_path %></li>
+        <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Sign in", new_user_session_path %></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</nav>
