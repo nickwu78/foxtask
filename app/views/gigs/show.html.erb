@@ -1,0 +1,10 @@
+<div class="container">
+  <h2><%= @gig.name %> </h2>
+  <p>Created <%= @gig.created_at.strftime("%b %d, %Y") %></p>
+  <h5>Location</h5>
+  <p><%= @gig.location %> </p>
+  <h5>Budget</h5>
+  <p>$<%= @gig.budget %> </p>
+  <h5>Description</h5>
+  <p><%= @gig.description %> </p>
+</div>

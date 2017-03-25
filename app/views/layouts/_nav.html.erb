@@ -1,6 +1,6 @@
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Fox Task</a>
+    <%= link_to "Fox Task", root_path, class: "brand-logo"%>
     <ul id="nav-mobile" class="right hide-on-med-and-down">
       <li><a href="#" class="waves-effect waves-light btn">Browse all jobs</a></li>
       <li><%= link_to "Post A Gig &raquo".html_safe, new_gig_path, class: "waves-effect waves-light btn"%></li>
