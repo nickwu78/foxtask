@@ -1,9 +1,9 @@
 <nav>
   <div class="container">
     <div class="nav-wrapper">
-      <%= link_to "Fox Task", root_path, class: "brand-logo"%>
+      <%= link_to "taskFox", root_path, class: "brand-logo"%>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#" class="waves-effect waves-light btn">Browse all jobs</a></li>
+        <li><%= link_to "Browse All Jobs", root_path, class: "waves-effect waves-light btn" %></li>
         <li><%= link_to "Post A Gig &raquo".html_safe, new_gig_path, class: "waves-effect waves-light btn"%></li>
         <% if user_signed_in? %>
           <li><%= link_to "Profile", edit_user_registration_path %></li>
